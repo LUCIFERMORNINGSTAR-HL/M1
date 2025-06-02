@@ -105,27 +105,25 @@ Write a program to find minimum between two fraction numbers using conditional o
 #include <stdio.h>
 
 int main() {
-    float num1, num2, min;
+    int num1, denom1, num2, denom2;
+    float frac1, frac2;
 
-    // Input two fractional numbers
-    printf("Enter first number: ");
-    scanf("%f", &num1);
+    printf("Enter the numerator and denominator of the first fraction: ");
+    scanf("%d %d", &num1, &denom1);
 
-    printf("Enter second number: ");
-    scanf("%f", &num2);
+    printf("Enter the numerator and denominator of the second fraction: ");
+    scanf("%d %d", &num2, &denom2);
 
-    // Using ternary operator to find minimum
-    min = (num1 < num2) ? num1 : num2;
+    frac1 = (float)num1 / denom1;
+    frac2 = (float)num2 / denom2;
 
-    // Output the result
-    printf("Minimum number is: %.2f\n", min);
+    printf("The minimum value is: %.2f\n", (frac1 < frac2) ? frac1 : frac2);
 
     return 0;
 }
-
 ```
 ## OUTPUT:
-![M1 3](https://github.com/user-attachments/assets/91b1f742-5469-4596-9efd-34b77bef812f)
+![image](https://github.com/user-attachments/assets/2441cb68-560e-44cd-9aa3-4a3a3dcce5c0)
 
 
 ## RESULT:
